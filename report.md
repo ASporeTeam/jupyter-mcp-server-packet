@@ -5,7 +5,7 @@ third-party library [datalayer/jupyter-mcp-server](https://github.com/datalayer/
 pinned to commit `ef47e8b9c9bfce1a23265831a1ad80f94d58bb85` (2026-10-18, BSD-3-Clause,
 1312 stars, 205 forks), published **on the project's own registered domain**.
 
-- **public_url:** https://jupyter-mcp-server.datalayer.tech/mcp/
+- **public_url:** https://jupyter-mcp-server.datalayer.tech/mcp/index.html
 - **evidence_json:** https://asporeteam.github.io/jupyter-mcp-server-packet/evidence.json
 - **report:** https://asporeteam.github.io/jupyter-mcp-server-packet/report.md
 - **receipt_ref:** `runx:receipt:sha256:f6623a72e628591f264d4db307ca70f05ea23fcda2d0cdef2fe8e9effbd0d1c6`
