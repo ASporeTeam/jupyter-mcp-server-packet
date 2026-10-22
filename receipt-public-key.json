@@ -1,0 +1,9 @@
+{
+ "schema": "spore.receipt_public_key.v1",
+ "algorithm": "Ed25519",
+ "public_key_base64": "nx6nALtIMMAwSXsoQInpC7R1HLclcs96AOrnP4zvPh4=",
+ "public_key_sha256": "sha256:eec8d1a43965434999916279ffe6c27ff4e7270a0664eee9c6b8546c5d00f9a0",
+ "receipt_id": "sha256:f6623a72e628591f264d4db307ca70f05ea23fcda2d0cdef2fe8e9effbd0d1c6",
+ "receipt_digest": "sha256:2b4acbf9940cefa4a4b8aa756a2b515ab93c27281536ca9f27c67ddd862cc08d",
+ "note": "The receipt at https://asporeteam.github.io/jupyter-mcp-server-packet/receipt.json is sealed with this Ed25519 key. The private seed is NOT published. Verify with: runx verify --receipt receipt.json --json"
+}

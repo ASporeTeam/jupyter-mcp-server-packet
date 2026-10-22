@@ -1,0 +1,231 @@
+{
+ "artifacts": {
+  "LICENSE @ ef47e8b9c9bfce1a23265831a1ad80f94d58bb85": {
+   "bytes": 1517,
+   "sha256": "888ead28a5342901d93e31d09f37782edf695d2f14fbbdb08d3fcf6063f76b66",
+   "url": "https://raw.githubusercontent.com/datalayer/jupyter-mcp-server/ef47e8b9c9bfce1a23265831a1ad80f94d58bb85/LICENSE"
+  },
+  "docs/sourcey/sourcey.config.ts @ ef47e8b9c9bfce1a23265831a1ad80f94d58bb85": {
+   "bytes": 2463,
+   "sha256": "92bf0ad69e73275946ac60bdaa8adb4182f31645eca7f9678bb1c9625ebf3753",
+   "url": "https://raw.githubusercontent.com/datalayer/jupyter-mcp-server/ef47e8b9c9bfce1a23265831a1ad80f94d58bb85/docs/sourcey/sourcey.config.ts"
+  },
+  "published llms.txt": {
+   "bytes": 7583,
+   "sha256": "4ef2e7af847bafabaeadf70384aa7f872c3b42263eb2060bc890f43b2234bd24",
+   "url": "https://jupyter-mcp-server.datalayer.tech/mcp/llms.txt"
+  }
+ },
+ "base_url": "https://jupyter-mcp-server.datalayer.tech",
+ "documented_prompts": 1,
+ "documented_tools": 22,
+ "page_results": [
+  {
+   "bytes": 30766,
+   "path": "/mcp/",
+   "status": 200
+  },
+  {
+   "bytes": 31202,
+   "path": "/mcp/configuration/",
+   "status": 200
+  },
+  {
+   "bytes": 1150037,
+   "path": "/mcp/reference/",
+   "status": 200
+  },
+  {
+   "bytes": 28624,
+   "path": "/mcp/prompts/jupyter-cite/",
+   "status": 200
+  },
+  {
+   "bytes": 40357,
+   "path": "/mcp/tools/connect-to-jupyter/",
+   "status": 200
+  },
+  {
+   "bytes": 44226,
+   "path": "/mcp/tools/list-files/",
+   "status": 200
+  },
+  {
+   "bytes": 40486,
+   "path": "/mcp/tools/list-kernels/",
+   "status": 200
+  },
+  {
+   "bytes": 41263,
+   "path": "/mcp/tools/use-notebook/",
+   "status": 200
+  },
+  {
+   "bytes": 40290,
+   "path": "/mcp/tools/list-notebooks/",
+   "status": 200
+  },
+  {
+   "bytes": 40608,
+   "path": "/mcp/tools/read-notebook/",
+   "status": 200
+  },
+  {
+   "bytes": 37649,
+   "path": "/mcp/tools/restart-notebook/",
+   "status": 200
+  },
+  {
+   "bytes": 37703,
+   "path": "/mcp/tools/unuse-notebook/",
+   "status": 200
+  },
+  {
+   "bytes": 40166,
+   "path": "/mcp/tools/insert-cell/",
+   "status": 200
+  },
+  {
+   "bytes": 40679,
+   "path": "/mcp/tools/overwrite-cell-source/",
+   "status": 200
+  },
+  {
+   "bytes": 42530,
+   "path": "/mcp/tools/edit-cell-source/",
+   "status": 200
+  },
+  {
+   "bytes": 43753,
+   "path": "/mcp/tools/execute-cell/",
+   "status": 200
+  },
+  {
+   "bytes": 43883,
+   "path": "/mcp/tools/insert-execute-code-cell/",
+   "status": 200
+  },
+  {
+   "bytes": 42956,
+   "path": "/mcp/tools/read-cell/",
+   "status": 200
+  },
+  {
+   "bytes": 40735,
+   "path": "/mcp/tools/delete-cell/",
+   "status": 200
+  },
+  {
+   "bytes": 39788,
+   "path": "/mcp/tools/clear-cell-output/",
+   "status": 200
+  },
+  {
+   "bytes": 41538,
+   "path": "/mcp/tools/move-cell/",
+   "status": 200
+  },
+  {
+   "bytes": 43813,
+   "path": "/mcp/tools/execute-code/",
+   "status": 200
+  },
+  {
+   "bytes": 48536,
+   "path": "/mcp/tools/launch-sandbox/",
+   "status": 200
+  },
+  {
+   "bytes": 36947,
+   "path": "/mcp/tools/list-sandboxes/",
+   "status": 200
+  },
+  {
+   "bytes": 37904,
+   "path": "/mcp/tools/use-sandbox/",
+   "status": 200
+  },
+  {
+   "bytes": 37695,
+   "path": "/mcp/tools/terminate-sandbox/",
+   "status": 200
+  },
+  {
+   "bytes": 7583,
+   "path": "/mcp/llms.txt",
+   "status": 200
+  }
+ ],
+ "pages_checked": 27,
+ "pages_ok": 27,
+ "pinned_commit": "ef47e8b9c9bfce1a23265831a1ad80f94d58bb85",
+ "spot_checks": [
+  {
+   "found": true,
+   "http_status": 200,
+   "needle": "Jupyter MCP Server",
+   "path": "/mcp/",
+   "why": "the landing page names the documented project"
+  },
+  {
+   "found": true,
+   "http_status": 200,
+   "needle": "sourcey",
+   "path": "/mcp/",
+   "why": "the landing page carries the Sourcey generator markers"
+  },
+  {
+   "found": true,
+   "http_status": 200,
+   "needle": "datalayer/jupyter-mcp-server",
+   "path": "/mcp/",
+   "why": "the landing page links the source repository"
+  },
+  {
+   "found": true,
+   "http_status": 200,
+   "needle": "JupyterMCPConfig",
+   "path": "/mcp/configuration/",
+   "why": "the configuration page documents the config model"
+  },
+  {
+   "found": true,
+   "http_status": 200,
+   "needle": "use_notebook",
+   "path": "/mcp/tools/use-notebook/",
+   "why": "the use_notebook tool page documents the tool"
+  },
+  {
+   "found": true,
+   "http_status": 200,
+   "needle": "connect_to_jupyter",
+   "path": "/mcp/tools/connect-to-jupyter/",
+   "why": "the connect_to_jupyter tool page documents the tool"
+  },
+  {
+   "found": true,
+   "http_status": 200,
+   "needle": "launch_sandbox",
+   "path": "/mcp/tools/launch-sandbox/",
+   "why": "the launch_sandbox tool page documents the tool"
+  },
+  {
+   "found": true,
+   "http_status": 200,
+   "needle": "jupyter_cite",
+   "path": "/mcp/prompts/jupyter-cite/",
+   "why": "the prompt page documents the jupyter_cite prompt"
+  },
+  {
+   "found": true,
+   "http_status": 200,
+   "needle": "22 tools and 1 prompt",
+   "path": "/mcp/llms.txt",
+   "why": "llms.txt states the documented MCP surface"
+  }
+ ],
+ "spot_checks_passed": 9,
+ "spot_checks_total": 9,
+ "target_repo": "https://github.com/datalayer/jupyter-mcp-server",
+ "verdict": "PASS"
+}
