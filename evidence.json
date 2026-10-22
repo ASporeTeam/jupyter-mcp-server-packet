@@ -598,12 +598,13 @@
     },
     {
       "id": "recompute-path",
-      "statement": "The verifier that produced the receipt is published with this packet (SKILL.md, run.yaml, verify-jupyter.py), so a third party can re-run the identical checks against the live site.",
-      "skill": "https://asporeteam.github.io/jupyter-mcp-server-packet/SKILL.md",
+      "statement": "The verifier that produced the receipt is published with this packet (SKILL.txt, run.yaml, verify-jupyter.py), so a third party can re-run the identical checks against the live site. SKILL.txt is the skill file byte-for-byte; it is published with a .txt extension because the static-hosting build renders front-matter .md files as HTML.",
+      "skill": "https://asporeteam.github.io/jupyter-mcp-server-packet/SKILL.txt",
       "run_yaml": "https://asporeteam.github.io/jupyter-mcp-server-packet/run.yaml",
       "verifier": "https://asporeteam.github.io/jupyter-mcp-server-packet/verify-jupyter.py",
       "command": "runx skill ./SKILL.md default -i base_url=https://jupyter-mcp-server.datalayer.tech",
-      "value": "https://asporeteam.github.io/jupyter-mcp-server-packet/verify-jupyter.py"
+      "value": "https://asporeteam.github.io/jupyter-mcp-server-packet/verify-jupyter.py",
+      "skill_sha256": "sha256:504fef500b5fe2b9d15255443513e663c3310343799fe2d5cba457612c5af463"
     },
     {
       "id": "coverage-notes",
