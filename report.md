@@ -43,6 +43,11 @@ reference is the Sourcey output of the pinned commit.
   the Sourcey build output.
 - **27 pages**: the landing page, the configuration page, the MCP Explorer spec page,
   one page per tool, the prompt page, and `llms.txt`.
+- **22 of 22 tool pages carry four things a reader can act on**: a Parameters
+  section, an Output section, a "Call it" JSON-RPC request body, and a Source
+  link into the pinned tree (`jupyter_mcp_server/server.py`) - measured page by
+  page on the served reference, together with 26 of 26 pages answering HTTP 200
+  and 58 distinct internal links with 0 dead.
 - **Agent-readable by construction**: `/mcp/llms.txt` is the machine-readable index of
   the reference (7 583 bytes), served by the project, with its sha256 recorded in the
   evidence packet.
@@ -107,15 +112,23 @@ Each names the file and line it lives in, so the maintainer can act on it direct
   other 19 entry points live in `jupyter_mcp_server/server.py`. The reference groups
   them with the core tools and never says the group is extension-provided and
   separately installable.
-- **The published reference is one commit behind `main`.** The served pages are built
-  from the reference of the state at deploy time; `main` has moved on since
-  (the pinned commit is the repository's latest, dated 2026-10-18, but the site is
-  rebuilt only when the project's CI runs). A maintainer-facing reference that
-  rebuilds on release would never drift.
+- **The published reference only refreshes when the project's CI runs.** The served
+  pages are the Sourcey build of the repository state at deploy time, so the
+  reference can drift from `main` between CI runs. Measured on 2026-10-22 (13:0xZ),
+  `main` HEAD *is* the pinned commit `ef47e8b9` (2026-10-18T06:13:56Z, repository
+  `pushed_at` 2026-10-18T06:13:58Z) and this packet's own rebuild at that commit is
+  byte-identical to the served pages (26 of 26 pages, per-page sha256 in the
+  evidence) — so today the served reference is exactly the pinned commit. What
+  is not guaranteed is that it stays so on the next commit that lands without a CI
+  run. A reference that rebuilds on every release would never drift.
 - **No worked examples.** Upstream ships no runnable examples for the MCP surface, so
-  the reference legitimately carries zero example pages. That is a property of the
-  library at this commit, not a gap in the extraction — but it is the gap a new
-  contributor will hit first.
+  the reference carries zero dedicated example pages. What every tool page does
+  carry is a ready-to-use **"Call it"** section with a complete JSON-RPC
+  `tools/call` request body (measured on 22 of 22 tool pages), but no page shows the
+  expected *result* of that call, so a new contributor still has to learn the
+  response shape from the server code. That is a property of the library at this
+  commit, not a gap in the extraction — but it is the gap a new contributor will hit
+  first.
 
 ## Why the first delivery on this bounty was returned, and what changed
 
@@ -133,6 +146,18 @@ named defects, both now fixed:
    https://asporeteam.github.io/jupyter-mcp-server-packet/receipt.json. The receipt
    is fresh (the venue refuses a receipt that has already been spent on another
    delivery).
+
+## Revision note (2026-10-22 13:1xZ)
+
+Two statements in this report were re-measured page by page against the live
+reference and corrected before the review: the "one commit behind `main`" gap (the
+repository's `main` HEAD *is* the pinned commit `ef47e8b9`, and this packet's own
+rebuild at that commit is byte-identical to the served pages - what remains true is
+only that the site refreshes when the project's CI runs), and the "no worked
+examples" gap (every tool page does carry a complete JSON-RPC `tools/call` body in
+its "Call it" section; what is really absent is a worked *result*). The receipt,
+`evidence.json`, the public key and the governed run output are unchanged and
+byte-identical to what the venue verified.
 
 ## Who made this
 
